@@ -1,0 +1,534 @@
+<html>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HM-BJT | Himpunan Mahasiswa Barang Jadi Tekstil</title>
+     <style>
+ .logo {
+            cursor: pointer; /* Mengubah kursor menjadi tanda tangan saat diarahkan */
+            width: 150px; /* Sesuaikan ukuran sesuai kebutuhan */
+            transition: transform 0.3s ease; /* Efek animasi saat hover */
+        }
+        
+        .logo:hover {
+            transform: scale(1.05); /* Sedikit memperbesar saat hover */
+        }
+
+        :root {
+            --primary-color: #007a2d;
+            --secondary-color: #000000;
+            --accent-color: #f39c12;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .logo {
+            height: 80px;
+            margin-right: 1rem;
+        }
+        
+        .header-text h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header-text p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+   
+        
+        nav {
+            background-color: var(--secondary-color);
+            padding: 0.5rem 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+         .logo {
+            cursor: pointer; /* Mengubah kursor menjadi tanda tangan saat diarahkan */
+            width: 150px; /* Sesuaikan ukuran sesuai kebutuhan */
+            transition: transform 0.3s ease; /* Efek animasi saat hover */
+        }
+        
+        .logo:hover {
+            transform: scale(1.05); /* Sedikit memperbesar saat hover */
+        }
+
+        :root {
+            --primary-color: #007a2d;
+            --secondary-color: #000000;
+            --accent-color: #f39c12;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+         background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('BPI.jpg'); /* Ganti dengan path gambar Anda */
+    background-size: contain; /* atau 'contain' tergantung kebutuhan */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* opsional - membuat gambar tetap saat scrolling */
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .logo {
+            height: 80px;
+            margin-right: 1rem;
+        }
+        
+        .header-text h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header-text p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+   
+        
+        nav {
+            background-color: var(--secondary-color);
+            padding: 0.5rem 0;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            margin: 1.5rem 0 1rem;
+        }
+        
+        .structure {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .position {
+            background-color: var(--light-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem;
+            width: calc(33% - 2rem);
+            min-width: 250px;
+            box-shadow: 0 2px 3px #0000001a;
+            transition: all 0.3s;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .position:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .position h4 {
+            color: var(--dark-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .position p {
+            font-style: italic;
+            color: #666666;
+        }
+        
+        /* Modal Styling */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
+        }
+        
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 700px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+            animation: modalopen 0.5s;
+        }
+        
+        @keyframes modalopen {
+            from {opacity: 0; transform: translateY(-50px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+        
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover {
+            color: var(--accent-color);
+        }
+        
+        .divisi-detail {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .divisi-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-color);
+            margin-right: 30px;
+        }
+        
+        .divisi-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .divisi-info p {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+            
+            .position {
+                width: calc(50% - 2rem);
+            }
+            
+            .divisi-detail {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .divisi-photo {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .position {
+                width: 100%;
+            }
+            
+            .header-text h1 {
+                font-size: 1.5rem;
+            }
+            
+            .modal-content {
+                width: 95%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Logo HM-BJT.png" alt="Logo HM-BJT" class="logo" onclick="window.location.href='index.html'">
+            <div class="header-text">
+                <h1>HIMPUNAN MAHASISWA BARANG JADI TEKSTIL</h1>
+                <p>POLITEKNIK STTT BANDUNG</p>
+            </div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="index.html#vision-mission">Visi Misi</a></li>
+                <li><a href="struktur.html">Struktur Organisasi</a></li>
+                <li><a href="index.html#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section id="structure">
+            <h2>Struktur Organisasi</h2>
+            <div class="structure">
+                <!-- Ketua dan Wakil -->
+                <div class="position" onclick="openModal('ketua')">
+                    <h4>Ketua Umum</h4>
+                    <p>Putri Khelida Yusrina</p>
+                    <p>Memimpin organisasi dan bertanggung jawab atas semua kegiatan HM-BJT</p>
+                </div>
+                
+                <div class="position" onclick="openModal('wakil')">
+                    <h4>Sekretaris Jendral</h4>
+                    <p>Novia Melya Fitriani</p>
+                    <p>Membantu ketua umum dan mengurus pemberkasan, administrasi, serta kerumah tanggaan HM-BJT.</p>
+                </div>
+                
+                <!-- Sekretaris dan Bendahara -->
+                <div class="position" onclick="openModal('sekretaris')">
+                    <h4>Bendahara Umum</h4>
+                    <p>Izmi Nursyamsi M</p>
+                    <p>Bertanggung jawab atas keuangan HM-BJT.</p>
+                </div>
+                
+                <div class="position" onclick="openModal('bendahara')">
+                    <h4>PSDM</h4>
+                    <p>Zharfan Shyakiran Plaben Tirus</p>
+                    <p>Bertanggung jawab dalam mengawasi dan membina Badan Pengurus HM-BJT.</p>
+                </div>
+                
+                <!-- Divisi-divisi -->
+                <div class="position" onclick="openModal('pendidikan')">
+                    <h4>Kemahasiswaan</h4>
+                    <p>Hanifa Khonsa Tsabitah</p>
+                    <p>Bertanggung jawab dalam pengembangan potensi non akademik, aspirasi, dan sarana informasi.</p>
+                </div>
+                
+                <div class="position" onclick="openModal('kreatif')">
+                    <h4>Keilmuan</h4>
+                    <p>Shofia BadriatulKamal</p>
+                    <p>Bertanggung jawab dalam kegiatan akademik dan pelatihan.</p>
+                </div>
+                
+                <div class="position" onclick="openModal('hubindustri')">
+                    <h4>Kewirausahaan</h4>
+                    <p>Dinar Bunga Oktavia</p>
+                    <p>Meningkatkan keuangan Non-KM HM-BJT.</p>
+                </div>
+                
+                <div class="position" onclick="openModal('media')">
+                    <h4>Hubungan luar</h4>
+                    <p>Nurul Azizah</p>
+                    <p>Memperluas relasi HM-BJT dengan pihak eksternal baik di luar maupun di dalam kampus.</p>
+                </div>
+        </section>
+    </div>
+    
+    <!-- Modal Structure -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalContent">
+                <!-- Konten akan diisi oleh JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 HM-BJT - Himpunan Mahasiswa Barang Jadi Tekstil</p>
+        <p>Politeknik STTT Bandung</p>
+    </footer>
+    
+    <script>
+        // Data kepala divisi
+        const divisiData = {
+            ketua: {
+                nama: "Putri Khelida Yusrina",
+                jabatan: "Ketua Umum HM-BJT",
+                foto: "Teh put.jpg",
+                deskripsi: "Pengawas jalannya seluruh kegiatan HM-BJT Politeknik STTT Bandung serta sebagai koordinator umum dan penanggung jawab penuh dalam pelaksanaan tugas–tugas internal dan eksternal HM-BJT Politeknik STTT Bandung yang bersifat umum. Dalam menjalankan tugas sehari-hari dibantu oleh sekretaris jenderal, bendahara umum, kepala divisi dan seluruh pengurus HM-BJT Politeknik STTT Bandung.",
+                kontak: "-",
+                pendidikan: "Produksi Garmen Kons.Fashion Design"
+                
+            },
+            wakil: {
+                nama: "Novia Melya Fitriani",
+                jabatan: "Sekretaris Jendral",
+                foto: "Teh Nop.jpg",
+                deskripsi: "Wakil ketua umum yang bertanggung jawab dalam pelaksanaan tugas-tugas pengarsipan, pendataan inventaris dan tugas-tugas kerumahtanggaan organisasi serta membantu ketua umum dalam mengawasi jalannya seluruh kegiatan HM-BJT Politeknik STTT Bandung.",
+                kontak: "wakil@hmbjt.ac.id",
+                pendidikan: "Produksi Garmen"
+            },
+            sekretaris: {
+                nama: "Izmi Nursyamsi M",
+                jabatan: "Bendahara Umum",
+                foto: "Teh Izmi.jpg",
+                deskripsi: "Pembantu ketua umum yang bertanggung jawab atas keuangan HM-BJT Politeknik STTT Bandung.",
+                kontak: "sekretaris@hmbjt.ac.id",
+                pendidikan: "Produksi Garmen"
+            },
+            bendahara: {
+                nama: "Zharfan Shyakiran Plaben Tirus",
+                jabatan: "Kepala Divisi PSDM",
+                foto: "Teh jep.jpg",
+                deskripsi: "Pembantu ketua umum yang bertanggung jawab terhadap pengawasan dan pengembangan serta pembinaan pengurus dan Calon Pengurus HM-BJT Politeknik STTT Bandung.",
+                kontak: "bendahara@hmbjt.ac.id",
+                pendidikan: "Produksi Garmen"
+            },
+            pendidikan: {
+                nama: "Hanifa Khonsa Tsabitah",
+                jabatan: "Kepala Divisi Kemahasiswaan",
+                foto: "Teh Hanifah.jpg",
+                deskripsi: "Pembantu ketua umum yang bertanggung jawab dalam pengelolaan, pengembangan potensi non akademik, aspirasi anggota dan pemberian serta penerimaan informasi dalam bidang kemahasiswaan.",
+                kontak: "pendidikan@hmbjt.ac.id",
+                pendidikan: "Produksi Garmen Kons.Fashion Design"
+            },
+            kreatif: {
+                nama: "Shofia BadriatulKamal",
+                jabatan: "Kepala Divisi Keilmuan",
+                foto: "Teh Novi.jpg",
+                deskripsi: "Pembantu ketua umum yang bertanggung jawab dalam pengembangan potensi anggota di bidang akademik.",
+                kontak: "kreatif@hmbjt.ac.id",
+                pendidikan: "Produksi Garmen Kons.Fashion Design"
+            },
+            hubindustri: {
+                nama: "Dinar Bunga Oktavia",
+                jabatan: "Kepala Divisi Kewirausahaan",
+                foto: "Teh Dinar.jpg",
+                deskripsi: "Pembantu ketua umum yang bertanggung jawab dalam peningkatan keuangan Non-KM HM-BJT Politeknik STTT Bandung dan menumbuhkan potensi anggota di bidang kewirausahaan.",
+                kontak: "industri@hmbjt.ac.id",
+                pendidikan: "Produksi Garmen Kons.Fashion Design"
+            },
+            media: {
+                nama: "Nurul Azizah",
+                jabatan: "Kepala Divisi Hubungan Luar",
+                foto: "Teh Nurul.jpg",
+                deskripsi: "Pembantu ketua umum yang bertanggung jawab dalam penerimaan dan pemberian informasi dari dan ke luar HM-BJT Politeknik STTT Bandung serta menjalin hubungan dengan seluruh elemen di luar lingkungan HM-BJT Politeknik STTT Bandung yang memberikan manfaat bagi HM-BJT Politeknik STTT Bandung.",
+                kontak: "media@hmbjt.ac.id",
+                pendidikan: "Produksi Garmen Kons.Fashion Design"
+            },
+        };
+        
+        // Fungsi untuk membuka modal
+        function openModal(divisiId) {
+            const divisi = divisiData[divisiId];
+            const modal = document.getElementById('detailModal');
+            const modalContent = document.getElementById('modalContent');
+            
+            // Isi konten modal
+            modalContent.innerHTML = `
+                <h2>${divisi.jabatan}</h2>
+                <div class="divisi-detail">
+                    <img src="${divisi.foto}" alt="${divisi.nama}" class="divisi-photo">
+                    <div class="divisi-info">
+                        <h3>${divisi.nama}</h3>
+                        <p><strong>Pendidikan:</strong> ${divisi.pendidikan}</p>
+                        <p><strong>Deskripsi Tugas:</strong> ${divisi.deskripsi}</p>
+                    </div>
+                </div>
+            `;
+            
+            modal.style.display = 'block';
+        }
+        
+        // Fungsi untuk menutup modal
+        function closeModal() {
+            document.getElementById('detailModal').style.display = 'none';
+        }
+        
+        // Tutup modal ketika klik di luar konten modal
+        window.onclick = function(event) {
+            const modal = document.getElementById('detailModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
